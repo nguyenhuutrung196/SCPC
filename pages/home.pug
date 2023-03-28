@@ -1,0 +1,112 @@
+.banner
+    .img-bg
+        img.background(src="", alt="", srcset="../images/bannerhome.png")
+        .logoopa
+            img(src="", alt="", srcset="../images/logoopacity.png")
+            h2 Phát huy lợi thế của doanh nghiệp gắn liền với 
+                | quảng bá hình ảnh đất nước, con người Việt Nam
+.bannergioithieu 
+    .img-bg-gt 
+        img(src="", alt="", srcset="../images/bannerhome1.png")
+        .gioithieu-info
+            h3 Giới thiệu
+            p Tổng Công ty Văn hóa Sài Gòn với 19 đơn vị thành viên có bề dày kinh nghiệm hoạt động trong các lĩnh vực in ấn, vật tư – thiết bị ngành in, điện ảnh, sản xuất – kinh doanh chương trình băng đĩa nhạc, phát hành sách, nhiếp ảnh, mỹ thuật,… có nguồn khách hàng truyền thống và là đối tác tin cậy của nhiều doanh nghiệp lớn trên cả nước, đã không ngừng phấn đấu để khẳng định thương hiệu và nâng cao vị thế của mình trên thương trường trong và ngoài nước.
+            a(href="#") 
+                img(src="", alt="", srcset="../images/btnxemthemhome.png")
+.bannerlvhd
+    .img-bg-lvhd
+        .title
+            .container
+                h3 LĨNH VỰC HOẠT ĐỘNG
+                p Lorem ipsum dolor sit amet consectetur. Sed lorem volutpat vel facilisi egestas feugiat dolor leo sodales. Blandit facilisi malesuada interdum nunc nunc sed eget eu dui. Sagittis semper vel eget faucibus eget id eget turpis. Viverra tempus venenatis velit viverra.
+        .img-section 
+            .list-section
+                img(src="", alt="", srcset="../images/bninan.png")
+                .list-info
+                    h3  IN ẤN
+                    p Trong lĩnh vực in ấn và bao bì, từ lâu Tổng Công Ty Văn hóa Sài Gòn đã là nhà cung cấp chuyên nghiệp và uy tín. Khách hàng có nhu cầu đến với Tổng Công Ty Văn Hóa Sài Gòn sẽ có nhiều cơ hội chọn lựa, hợp tác cùng 8 Công ty chuyên về gia công in ấn và chế bản với đội ngũ công nhân kỹ thuật chuyên nghiệp, các thiết bị chế bản và in ấn hiện đại, hệ thống máy xuất phim, máy in offset nhiều màu của Heidelberg và Komori, máy in flexo 6 màu của Aquaflex và công nghệ gia công hoàn chỉnh sau in …
+            .list-section
+                img(src="", alt="", srcset="../images/bnphathanh.png")
+                .list-info-rotate
+                    h3  PHÁT HÀNH
+            .list-section
+                img(src="", alt="", srcset="../images/bndienanh.png")
+                .list-info-rotate
+                    h3  ĐIỆN ẢNH
+            .list-section
+                img(src="", alt="", srcset="../images/bndichvu.png")
+                .list-info-rotate
+                    h3  DỊCH VỤ
+.btnxemthem
+    a(href="#") 
+        img(src="", alt="", srcset="../images/btnxemthemhome.png")
+.congbothongtin 
+    .container 
+        .title 
+            h3 CÔNG BỐ THÔNG TIN
+        .list-file 
+            .info 
+                h4 THÔNG TIN
+                hr
+                .list-report
+                    +ListReport("10.11.2022","Báo cáo thực trạng quản trị và cơ cấu tổ chức của doanh nghiệp năm 2020")
+                    +ListReport("10.11.2022","Báo cáo thực trạng quản trị và cơ cấu tổ chức của doanh nghiệp năm 2020")
+                    +ListReport("10.11.2022","Báo cáo thực trạng quản trị và cơ cấu tổ chức của doanh nghiệp năm 2020")
+                    +ListReport("10.11.2022","Báo cáo tài chính đã kiểm toán Cty Mẹ năm 2020")
+                    +ListReport("10.11.2022","Báo cáo tài chính đã kiểm toán Cty Mẹ năm 2020")
+                    +ListReport("10.11.2022","Báo cáo tài chính đã kiểm toán Cty Mẹ năm 2020")
+                    +ListReport("10.11.2022","Báo cáo thực trạng quản trị và cơ cấu tổ chức DN 2018")
+                    +ListReport("10.11.2022","Báo cáo thực trạng quản trị và cơ cấu tổ chức DN 2018")
+                    +ListReport("10.11.2022","Báo cáo thực trạng quản trị và cơ cấu tổ chức DN 2018")
+                    +ListReport("10.11.2022","Tổ chức bán thanh lý tài sản cố định với hình thức bán chào giá cạnh tranh")
+                    +ListReport("10.11.2022","Tổ chức bán thanh lý tài sản cố định với hình thức bán chào giá cạnh tranh")
+                    +ListReport("10.11.2022","Tổ chức bán thanh lý tài sản cố định với hình thức bán chào giá cạnh tranh")
+                .btnxemthem-info
+                    a(href="#") 
+                        img(src="", alt="", srcset="../images/btnxemthemhome.png")
+        .title 
+            h3 TIN TỨC
+        .section_news
+            ul 
+                li 
+                    a(href="#") Tất cả 
+                li 
+                    a(href="#") Tin nổi bật
+                li 
+                    a(href="#") Tin công ty
+                li 
+                    a(href="#") Thành viên
+        .swiper.swiper-news
+            .swiper-wrapper
+                +NewsListHomepage("../images/news1.png","Tổng Cty Văn hoá Sài Gòn phấn đấu trở thành DN kinh tế văn hóa lớn mạnh","(HCM Cityweb) – Sáng 10-8, Trưởng ban Tổ chức Thành uỷ Nguyễn Thị Thu Hà và Phó Chủ tịch UBND TP HCM Hứa Ngọc Thuận đã tham dự Đại hội Đảng bộ Tổng công ty Văn hóa Sài Gòn (VHSG) nhiệm kỳ II (2010 – 2015).","Tin nổi bật","03.11.2022")
+                +NewsListHomepage("../images/news2.png","NXB Trẻ ra loạt sách mới mừng sinh nhật tuổi 30","Nhân kỷ niệm 30 năm thành lập, NXB Trẻ ra mắt nhiều sách mới của các tác giả uy tín như Nguyên Ngọc, Hoàng Phủ Ngọc Tường... cùng tuyển tập các cây bút, nhà văn trẻ được yêu thích","Thành viên","03.11.2022")
+                .swiper-slide 2
+                .swiper-slide 3
+                .swiper-slide 4
+                .swiper-slide 5
+            .swiper-button-next
+            .swiper-button-prev
+    .congtythanhvien 
+        .container
+            h3 công ty thành viên
+            .swiper.mySwiper
+                .swiper-wrapper
+                    .swiper-slide 
+                        img(src="", alt="", srcset="../images/cty1.png")
+                    .swiper-slide 
+                        img(src="", alt="", srcset="../images/cty2.png")
+                    .swiper-slide 
+                        img(src="", alt="", srcset="../images/cty3.png")
+                    .swiper-slide 
+                        img(src="", alt="", srcset="../images/cty4.png")
+                    .swiper-slide 
+                        img(src="", alt="", srcset="../images/cty5.png")
+                .swiper-button-next
+                .swiper-button-prev
+.toggle-bottom
+    button#toTop
+        <i class="fa-solid fa-arrow-up"></i>
+    button
+        <i class="fa-solid fa-phone"></i>
+    button
+        <i class="fa-regular fa-envelope"></i>

@@ -1,0 +1,36 @@
++Breadcrumbs("Liên hệ")
+section.lienhe
+    .container
+        h2 liên hệ
+        .contact-main
+            //- left
+            .form-contact 
+                p Quý khách vui lòng điền thông tin vào mẫu bên dưới và gửi những góp ý, thắc mắc cho 
+                a(href="#" class="grid") SCPC 
+                |chúng tôi sẽ phản hồi email của Quý Khách trong thời gian sớm nhất.
+                form(action="#") 
+                    input(type="text", name="name", required, placeholder="Họ và tên *")
+                    input(type="number", name="phone", required, placeholder="Số điện thoại *")
+                    input(type="email", name="email", required, placeholder="Email *")
+                    input(type="text", name="title", placeholder="Tiêu đề")
+                    textarea#conttent(name="content", placeholder="Nội dung") 
+                    .endform 
+                        .captcha 
+                            input#check(type="checkbox", name="check")
+                            label.checktitle(for="check") Tôi không phải là người máy
+                            .logo-captcha 
+                                img(src="", alt="", srcset="../images/captcha.png")
+                                label(for="captcha") Bảo mật - Điều khoản
+                        .send
+                            button(type="submit") Gửi 
+
+            //- right
+            .info-contact 
+                h3  TỔNG CÔNG TY VĂN HÓA SÀI GÒN CÔNG TY TNHH MỘT THÀNH VIÊN
+                ul 
+                    li 
+                        <i class="fa-solid fa-location-dot"></i> 88 Trần Đình Xu, Phường Cô Giang, Quận 1, TP.HCM
+                    li 
+                        <i class="fa-solid fa-phone"></i> (028) 383 65 778 - (028)392 06 606 – (028)383 85 269
+                img(src="", alt="", srcset="../images/map.png")
+

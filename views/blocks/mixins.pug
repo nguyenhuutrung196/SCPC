@@ -1,0 +1,110 @@
+mixin ListReport(date, title)
+    .file 
+        .each-file
+            .file-icon
+                <i class="fa-regular fa-file-lines fa-2xl"></i> 
+            .file-info
+                a(href="#")
+                    .date= date 
+                    p= title
+
+mixin Breadcrumbs(page, detail)
+    section.breadcrumbs
+            .container
+                a(href="#") Trang chủ 
+                p |
+                a(href="#")= page
+                if detail
+                    p |
+                    a(href="#")= detail
+    hr
+
+mixin ListNews(img, title, content, memdate)
+    .list-news 
+        .img 
+            img(src="", alt="", srcset= img)
+        .content-under-img 
+            h4= title 
+            p.content= content 
+            p.thanhvien= memdate
+
+mixin SliderHistory(content, year)
+    .swiper-slide 
+        .content-his
+            img(src="", alt="", srcset="../images/rectagle.png")
+            p= content
+        .tag-his 
+            img(src="", alt="", srcset="../images/rectagle1.png")
+            p= year
+
+mixin Hoidongthanhvien(image, gender, name, position)
+    .hoidong-info
+        .hdtv
+            img(src="", alt="", srcset= image) 
+            p= gender 
+                span
+                    strong= name
+            p
+                strong= position
+
+mixin Linhvuc-redbg(title, content, bg, img) 
+    .linhvuc
+        .linhvuc-info
+            h3= title
+            p= content
+            a(href="#") 
+                img(src="", alt="", srcset="../images/btnxemthem.png")
+        .linhvuc-img
+            .bg-img
+                img(src="", alt="", srcset= bg)
+            .main.img
+                img(src="", alt="", srcset= img)
+
+mixin Linhvuc-whitebg(title, content, bg, img)
+    .linhvuc 
+        .linhvuc-img
+            .bg-img
+                img(src="", alt="", srcset= bg)
+            .main.img
+                img(src="", alt="", srcset= img)
+        .linhvuc-info
+            h3= title
+            p= content
+            a(href="#") 
+                img(src="", alt="", srcset="../images/btnxemthem.png")
+
+mixin ListCompany(modalid, img, name)
+    button.modal-open(data-modal= modalid )
+        img(src="", alt="", srcset= img)
+        h4= name 
+
+mixin ContentDetail(img, name, content1, strong, content2)
+    .modal-content 
+        button.icon.modal-close 
+            span x 
+        .modal-body
+            .left-img
+                img(src="", alt="", srcset= img)
+            .right-content 
+                h5= name
+                .content
+                    p= content1 
+                        if strong
+                            strong= strong
+                    br
+                    p= content2 
+                .link 
+                    a(href="#") Đi đến website +
+
+mixin NewsListHomepage(img, title, content, status, date)
+    .swiper-slide
+        .news-info 
+            a(href="#") 
+                img(src="", alt="", srcset= img)
+                h3= title 
+                p= content
+                .sign
+                    p.status= status
+                    p | 
+                    p.date= date
+

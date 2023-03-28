@@ -1,0 +1,34 @@
+block mixins
+    include ../blocks/mixins
+block vars 
+    -title = 'Layout'
+    -bodyClass = ''
+
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel='preconnect' href='https://fonts.googleapis.com')
+        link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+        link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css')
+        link(href='https://fonts.googleapis.com/css2?family=K2D:wght@100;200;300;400;500;600;700;800&display=swap' rel='stylesheet')
+        link(rel="stylesheet", href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css")
+        link(rel="stylesheet", href="../../styles/style.css")
+        link(rel="stylesheet", href="../../style/main.css")
+        title=title 
+    body(class=bodyClass)
+        block header 
+            include ../../views/header/header.pug
+
+        main
+            block main 
+
+        block footer
+            include ../../views/footer/footer.pug
+    script(src='https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js')
+    script(src='https://code.jquery.com/jquery-3.6.4.js' integrity='sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=' crossorigin='anonymous') 
+    script(src="../../js/swiper.js") 
+    script(src="../../js/app.js")
+    

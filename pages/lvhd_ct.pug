@@ -1,0 +1,53 @@
++Breadcrumbs("Lĩnh vực hoạt động","In ấn")
+section.lvhdinan
+    .container
+        .inan-info
+            .left-info
+                h3 In ấn
+                p Trong lĩnh vực in ấn và bao bì, từ lâu Tổng Công Ty Văn hóa Sài Gòn đã là nhà cung cấp chuyên nghiệp và uy tín. Khách hàng có nhu cầu đến với Tổng Công Ty Văn Hóa Sài Gòn sẽ có nhiều cơ hội chọn lựa, hợp tác cùng 8 Công ty chuyên về gia công in ấn và chế bản với đội ngũ công nhân kỹ thuật chuyên nghiệp, các thiết bị chế bản và in ấn hiện đại, hệ thống máy xuất phim, máy in offset nhiều màu của Heidelberg và Komori, máy in flexo 6 màu của Aquaflex và công nghệ gia công hoàn chỉnh sau in …cho phép in các sản phẩm đẹp, nhiều kích cỡ; hệ thống máy xuất kẽm CTP Suprasetter 105 giúp nâng cao chất lượng và giảm thời gian thực hiện sản phẩm, đồng thời tiết giảm chi phí từ 10 – 15% cho khách hàng so với công nghệ xuất phim truyền thống trước đây.
+                    br
+                    br
+                    | Trong lĩnh vực in ấn và bao bì, từ lâu Tổng Công Ty Văn hóa Sài Gòn đã là nhà cung cấp chuyên nghiệp và uy tín. Khách hàng có nhu cầu đến với Tổng Công Ty Văn Hóa Sài Gòn sẽ có nhiều cơ hội chọn lựa, hợp tác cùng 8 Công ty chuyên về gia công in ấn và chế bản với đội ngũ công nhân kỹ thuật chuyên nghiệp, các thiết bị chế bản và in ấn hiện đại, hệ thống máy xuất phim, máy in offset nhiều màu của Heidelberg và Komori, 
+            .right-img
+                .swiper.mySwiper2(style='--swiper-navigation-color: #fff; --swiper-pagination-color: #fff')
+                    .swiper-wrapper
+                        .swiper-slide
+                            img(src="", alt="", srcset="../images/ia1.png")
+                        .swiper-slide
+                            img(src="", alt="", srcset="../images/ia2.png")
+                        .swiper-slide
+                            img(src="", alt="", srcset="../images/ia3.png")
+                        .swiper-slide
+                            img(src="", alt="", srcset="../images/ia4.png")
+                .swiper.mySwiper(thumbsslider='')
+                    .swiper-wrapper
+                        .swiper-slide
+                            img(src="", alt="", srcset="../images/ia1.png")
+                        .swiper-slide
+                            img(src="", alt="", srcset="../images/ia2.png")
+                        .swiper-slide
+                            img(src="", alt="", srcset="../images/ia3.png")
+                        .swiper-slide
+                            img(src="", alt="", srcset="../images/ia4.png")
+                    .swiper-button-next
+                    .swiper-button-prev
+        .congty-list 
+            +ListCompany("modal1","../images/ia5.png","Công ty in văn hóa sài gòn")
+            +ListCompany("modal2","../images/ia6.png","CÔNG TY CỔ PHẦN IN SỐ 4")
+            +ListCompany("modal3","../images/ia7.png","CÔNG TY CỔ PHẦN IN SỐ 7")
+            +ListCompany("modal4","../images/ia8.png","CÔNG TY CỔ PHẦN IN VƯỜN LÀI")
+            +ListCompany("modal5","../images/ia9.png","CÔNG TY CỔ PHẦN IN GIA ĐỊNH")
+            +ListCompany("modal6","../images/ia10.png","CÔNG TY CỔ PHẦN BAO BÌ VAFACO")
+            
+            .modal#modal1 
+                +ContentDetail("../images/ia5.png","Công ty in văn hóa sài gòn")
+            .modal#modal2 
+                +ContentDetail("../images/ia6.png","CÔNG TY CỔ PHẦN IN SỐ 4","Với tiêu chí kinh doanh linh hoạt, uy tín, quan tâm đến chất lượng sản phẩm, giá cả hợp lý, cung cách phục vụ khách hàng ân cần, tận tình và chu đáo ","“Khách hàng là Ân nhân – Uy tín là Chất lượng”","Định hướng phát triển của Công ty trong thời gian tới là sản xuất bao bì nhựa tự hủy sinh học, góp phần tạo ra sản phẩm thân thiện môi trường. Thị trường tiêu thụ sản phẩm của Công ty là thị trường trong và ngoài nước Định hướng phát triển của Công ty trong thời gian tới là sản xuất bao bì nhựa tự hủy sinh học, góp phần tạo ra sản phẩm thân thiện môi trường. Thị trường tiêu thụ sản phẩm của Công ty là thị trường trong và ngoài nước ")
+            .modal#modal3 
+                +ContentDetail("../images/ia7.png","CÔNG TY CỔ PHẦN IN SỐ 7")
+            .modal#modal4
+                +ContentDetail("../images/ia8.png","CÔNG TY CỔ PHẦN IN VƯỜN LÀI")
+            .modal#modal5
+                +ContentDetail("../images/ia9.png","CÔNG TY CỔ PHẦN IN GIA ĐỊNH")
+            .modal#modal6
+                +ContentDetail("../images/ia10.png","CÔNG TY CỔ PHẦN BAO BÌ VAFACO","Với tiêu chí kinh doanh linh hoạt, uy tín, quan tâm đến chất lượng sản phẩm, giá cả hợp lý, cung cách phục vụ khách hàng ân cần, tận tình và chu đáo","“Khách hàng là Ân nhân – Uy tín là Chất lượng”","Định hướng phát triển của Công ty trong thời gian tới là sản xuất bao bì nhựa tự hủy sinh học, góp phần tạo ra")
